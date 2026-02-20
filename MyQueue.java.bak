@@ -9,4 +9,21 @@ class MyQueue
 	  que=new int[capacity];
 	  front=rear=-1;
 	}
+	
+	void enQue(int ele)
+	{
+		
+	}
+	void deQue()
+	{
+		
+	}
+	String toString()
+	{
+		
+	}
+	int size()
+	{
+		
+	}
 }

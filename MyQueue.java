@@ -24,6 +24,6 @@ class MyQueue
 	}
 	int size()
 	{
-		
+		return 10;
 	}
 }
