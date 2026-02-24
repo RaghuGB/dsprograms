@@ -12,18 +12,49 @@ class MyQueue
 	
 	void enQue(int ele)
 	{
+		if(rear==capacity-1)
+		{
+			System.out.println("Queue is full");
+			return;
+		}
+		if(front==-1)
+			front=0;
 		
+		que[++rear]=ele;
 	}
-	void deQue()
+	int deQue()
 	{
-		
+		if(front==-1)
+		{
+			System.out.println("Queue is empty..");
+			return 0;
+		}
+		int ele=que[front++];
+		if(front>rear)
+			front=rear=-1;
+	  return ele;
 	}
-	String toString()
+	public String toString()
 	{
-		
+		String str="[";
+		for(int i=front;i<=rear;i++)
+		{
+			str=str+que[i]+" ";
+		}
+		return str.trim()+"]";
 	}
 	int size()
 	{
+		if(front==-1)
+			return 0;
 		
+		return rear-front+1;
 	}
 }
+
+
+
+
+
+
+
