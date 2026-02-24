@@ -48,7 +48,7 @@ class MyQueue
 		if(front==-1)
 			return 0;
 		
-		return rear-front+1;
+		return rear-front-1;
 	}
 }
 
